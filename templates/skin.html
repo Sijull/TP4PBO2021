@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+
+  <title>GUDANG ACONG</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">STOK GUDANG TOKO ACONG</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  </nav>
+
+  <br />
+  <br />
+
+  <div style="margin-left: 5%">
+    <form action="index.php" method="POST">
+      <div class="form-row">
+        <div class="form-group col-md-2">
+          <label for="tnama">Nama Barang</label>
+          <input type="text" class="form-control" name="tnama" required />
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group col-md-2">
+          <label for="tmasuk">Masuk Gudang</label>
+          <input class="form-control" type="date" name="tmasuk" required />
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group col-md-2">
+          <label for="tdetail">Detail</label>
+          <textarea class="form-control" name="tdetail" rows="3" required></textarea>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="form-group col-md-6">
+          <label for="ttipe">Tipe</label>
+          <div class="col-sm-10">
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="ttipe" id="ttipe1" value="Elektronik" />
+              <label class="form-check-label" for="ttipe1">Elektronik</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="ttipe" id="ttipe2" value="Perabotan" />
+              <label class="form-check-label" for="ttipe2">Perabotan</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="ttipe" id="ttipe3" value="Makanan" />
+              <label class="form-check-label" for="ttipe3">Makanan</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="ttipe" id="ttipe4" value="Lainnya" />
+              <label class="form-check-label" for="ttipe4">Lainnya</label>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="form-group col-md-6">
+          <label for="tpriority">Priority</label>
+          <div class="col-sm-10">
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="tpriority" id="tpriority1" value="Low" />
+              <label class="form-check-label" for="tpriority1">Low</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="tpriority" id="tpriority2" value="Medium" />
+              <label class="form-check-label" for="tpriority2">Medium</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="tpriority" id="tpriority3" value="High" />
+              <label class="form-check-label" for="tpriority3">High</label>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <button type="submit" name="add" class="btn btn-primary">Add</button>
+    </form>
+    
+    <br>
+    
+    <!-- Tabel 1 - Task -->
+    <div style="display: inline-block; ">
+      <h3>Stok Barang</h3>
+      <!-- TABEL1 -->
+      <table align="left" border="1" style="text-align: center;">
+        <tr>
+          <td>No</td>
+          <td>Nama</td>
+          <td style="width: 40%;">Detail</td>
+          <td>Tipe</td>
+          <td>Priority</td>
+          <td>Masuk Gudang</td>
+          <td>Status</td>
+          <td>Aksi</td>
+        </tr>
+        <tr>
+          <!-- DATA YG AKAN DIGANTI -->
+          DATA_TABEL
+        </tr>
+
+      </table>
+    </div>
+
+    
+
+  </div>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+  </script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+  </script>
+</body>
+
+</html>s
